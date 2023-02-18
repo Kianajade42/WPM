@@ -15,7 +15,13 @@ const renderNewQuote = async() => {
 
  quote = data.content;
 
- console.log(data);
+//  console.log(data.content);
+
+let arr = quote.split("").map(value => {
+    return "<span class='quote-chars'>" + value + "</span>"
+});
+quoteSection.innerHTML += arr.join("");
+console.log(arr)
 };
 
 window.onload = () => {
