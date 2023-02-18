@@ -6,12 +6,12 @@
 }
 
 body{
-    background-color: rgb(204, 177, 153);
+    background-color: rgb(164, 226, 251);
 }
 .container {
  width: 80vmin;
  padding: 50px 30px;
- background-color: rgba(252, 255, 217, 0.784);
+ background-color: rgba(248, 248, 244, 0.936);
  position: absolute;
  transform: translate(-50%, -50%);
  top: 50%;
@@ -27,9 +27,28 @@ body{
 }
 
 .stats span {
-    font-weight: 800;
+    font-weight: 600;
 }
 
 #quote {
     text-align: justify;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+ border-radius: 10px 5px;
+ padding: 10px 5px;
+ font-size: 16px;
+}
+
+button{
+float: right;
+margin-top: 20px;
+background-color: rgb(140, 190, 206);
+color: rgb(2, 0, 0);
+border: none;
+padding: 10px 30px;
+border-radius: 5px;
+font-size: 20px;
 }
