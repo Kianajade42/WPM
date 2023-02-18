@@ -52,3 +52,29 @@ padding: 10px 30px;
 border-radius: 5px;
 font-size: 20px;
 }
+.result {
+    margin-top: 40px;
+    display: none
+}
+.result h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrapper span{
+    font-weight: 60px;
+}
+
+.succes{
+    color: green;
+}
+
+.fail {
+    color: red;
+}
