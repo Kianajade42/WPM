@@ -53,10 +53,21 @@ quoteSection.innerHTML += arr.join("");
                 document.getElementById("mistakes").innerText =
                 mistakes;   
         }
-          
+         let check = quoteChars.every(element=>{
+            return element.classList.contains("success");
+         }); 
+         if(check){
+            displayResult();
+         }
     });
  })
 
+
+ 
+ const displayResult = () => {
+    document.querySelector(".result").style.display =
+    "block";
+ }
 
  const startTest = () => {
     mistakes = 0;
