@@ -60,19 +60,37 @@ quoteSection.innerHTML += arr.join("");
             displayResult();
          }
     });
- })
+ });
+
+function updateTimer(){
+    if(time == 0){
+        displayResult();
+    }
+    else{
+        document.getElementById("timer").innerText =
+        --time + "s";
+    }
+}
+
+ const timeReduce = () => {
+  time = 60;
+  timer = setInterval(updateTimer, 1000)
+ };
 
 
- 
  const displayResult = () => {
     document.querySelector(".result").style.display =
     "block";
+    clearInterval(timer);
+    document.getElementById("stop-test").style.display =
+    "none";
  }
 
  const startTest = () => {
     mistakes = 0;
     timer ="";
     userInput.disabled = false;
+    timeReduce()
     document.getElementById("start-test").style.display =
     "none";
     document.getElementById("stop-test").style.display =
