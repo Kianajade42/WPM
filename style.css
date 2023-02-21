@@ -6,10 +6,10 @@
 }
 
 body{
-    background-color: rgb(164, 226, 251);
+    background-color: rgba(164, 251, 204, 0.919);
 }
 .container {
- width: 80vmin;
+ width: 80min;
  padding: 50px 30px;
  background-color: rgba(248, 248, 244, 0.936);
  position: absolute;
@@ -19,11 +19,29 @@ body{
  border-radius: 10px;
  box-shadow: 0 20px 40px rgba(0,0,0,1.5)
 }
-
+.title {
+    background-color: #b3df9f;
+        text-align: center;
+        font-size: 18px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color:aliceblue;
+        padding: 10px 10px;
+        border-radius: 5px;
+        font-weight: 200px;
+    
+}
 .stats {
-    text-align: right;
+    color: aliceblue;
+    background-color: #b3df9f;
+    text-align: center;
     font-size: 18px;
     margin-bottom: 30px;
+    margin-top: 50px;
+    margin-left: 140px;
+    margin-right: 140px;
+    padding: 10px 10px;
+    border-radius: 5px;
+
 }
 
 .stats span {
@@ -35,22 +53,24 @@ body{
      padding: 30px 10px;
 }
 
+
 textarea {
-    resize: none;
-    width: 100%;
+resize: none;
+width: 100%;
  border-radius: 10px 5px;
  padding: 10px 5px;
  font-size: 16px;
 }
 
 button{
+color: aliceblue;
 float: right;
 margin-top: 20px;
-background-color: rgb(140, 190, 206);
+background-color: #b3df9f;
 color: rgb(2, 0, 0);
-border: none;
+border: thin black;
 padding: 10px 30px;
-border-radius: 5px;
+border-radius: 15px;
 font-size: 20px;
 }
 .result {
@@ -73,9 +93,21 @@ font-size: 20px;
 }
 
 .success{
-    color: green;
+    color: rgb(36, 230, 59);
 }
 
 .fail {
-    color: red;
+    color: rgb(252, 16, 16);
+}
+
+
+.quote-chars  {
+    display: inline-block;
+    background-color: rgb(251, 251, 251);
+    padding: 12px;
+    margin: 2px;
+    border-color: black;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(63, 62, 62, 0.895);
+    size: 4px;
 }
