@@ -11,7 +11,7 @@ body{
 .container {
  width: 80min;
  padding: 50px 30px;
- background-color: rgba(248, 248, 244, 0.936);
+ background-color: rgba(251, 251, 251, 0.897);
  position: absolute;
  transform: translate(-50%, -50%);
  top: 50%;
@@ -60,6 +60,7 @@ width: 100%;
  border-radius: 10px 5px;
  padding: 10px 5px;
  font-size: 16px;
+border: 3px solid #555;
 }
 
 button{
@@ -72,6 +73,7 @@ border: thin black;
 padding: 10px 30px;
 border-radius: 15px;
 font-size: 20px;
+box-shadow: 0 5px 5px rgba(63, 62, 62, 0.678);
 }
 .result {
     margin-top: 40px;
@@ -101,13 +103,28 @@ font-size: 20px;
 }
 
 
-.quote-chars  {
+/* .quote-chars  {
     display: inline-block;
     background-color: rgb(251, 251, 251);
-    padding: 12px;
-    margin: 2px;
+    padding: 7px;
+    margin: 3px;
     border-color: black;
     border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(63, 62, 62, 0.895);
+    box-shadow: 0 5px 5px rgba(63, 62, 62, 0.678);
     size: 4px;
+} */
+.quote-chars {
+    display: inline-block;
+    color: rgb(161, 157, 157);
+    border: solid 1px rgb(61, 58, 58);
+    box-shadow: 0 5px 5px rgba(63, 62, 62, 0.678);
+    text-decoration: none;
+    padding: 7px;
+    margin: 3px;
+    outline: none;
+    border-radius: 5px;
 }
+    .quote-chars .hover {
+        background: white;
+        border: solid 1px black;
+    }
